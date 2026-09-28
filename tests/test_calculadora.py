@@ -1,6 +1,7 @@
 import pytest
 from src.calculadora import suma, resta, multiplicacion, division
 
+
 def test_suma():
     assert suma(2, 3) == 5
 
@@ -14,8 +15,9 @@ def test_multiplicacion():
 
 
 def test_division():
-    assert division(10, 2) == 5
+    assert division(6, 3) == 2
+
 
 def test_division_entre_cero():
     with pytest.raises(ValueError):
-        division(5, 0)    
+        division(5, 0)
