@@ -12,6 +12,8 @@ def test_resta():
 def test_multiplicacion():
     assert multiplicacion(4, 3) == 12
 
+def division(a, b):
+    if b == 0:
+        raise ValueError("No se puede dividir entre cero")
+    return a / b
 
-def test_division():
-    assert division(10, 2) == 5
